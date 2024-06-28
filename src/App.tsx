@@ -1,8 +1,12 @@
 import * as React from "react";
+import './styles/main.scss';
+import 'normalize.css';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>TEST!!!</div>
+    <div className="app">
+      TEST!!!
+    </div>
   );
 }
 
