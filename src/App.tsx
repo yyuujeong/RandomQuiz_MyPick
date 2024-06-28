@@ -5,7 +5,7 @@ import 'normalize.css';
 const App: React.FC = () => {
   return (
     <div className="app">
-      TEST!!!
+      TEST!
     </div>
   );
 }
