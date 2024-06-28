@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "BMJUA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Screen
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 900px;
+
+// Colors
+$text-color: #292524;
+// $text-point-color: ;
+
+// Fonts
+$font-family-title: "DNFBitBitv2";
+$giant-title: 5rem;
+
+// Borders
+$line: 1px solid #E0E2E5;
+
+$point-color: #2563eb;
+// $point-color2: #006fff;
+// $point-color3: #0085ff;

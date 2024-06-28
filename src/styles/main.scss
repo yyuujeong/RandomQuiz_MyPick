@@ -1,11 +1,12 @@
 @import 'normalize.css';
+@import 'variables';
 
 body {
   background-color: #fafaf9;
-  font-family: Arial, sans-serif;
+  font-family: $font-family-title;
+  color: $text-color;
 }
 
 .app {
-  color: #333;
-  padding: 20px;
+  // padding: 20px;
 }

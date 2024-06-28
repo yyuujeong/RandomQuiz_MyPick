@@ -1,0 +1,21 @@
+@import '../variables';
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-title {
+  color: $point-color;
+  font-size: $giant-title;
+}
+
+/* 태블릿 스타일 */
+@media (min-width: $breakpoint-tablet) {
+  
+}
+
+/* 데스크탑 스타일 */
+@media (min-width: $breakpoint-desktop) {
+  
+}
