@@ -1,0 +1,13 @@
+@import 'normalize.css';
+@import 'variables';
+
+body {
+  background-color: #fafaf9;
+  font-family: $font-family-text;
+  color: $text-color;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
