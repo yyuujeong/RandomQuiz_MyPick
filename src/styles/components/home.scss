@@ -1,21 +1,83 @@
-@import '../variables';
+@import "../variables";
+@import "../mixins";
+
+@mixin position-svg($top, $right, $bottom, $left, $z-index: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
 
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.home-title {
-  color: $point-color;
-  font-size: $giant-title;
+  justify-content: center;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+
+  @include desktop {
+    margin-top: -2rem;
+  }
+
+  .home-wrapper {
+    position: relative;
+  }
+
+  p {
+    font-family: $font-family-title;
+    color: $point-color;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+
+    &.home-title {
+      margin: 1rem 0 3rem;
+    }
+
+    @include tablet {
+      font-size: 4.5rem;
+    }
+
+    @include desktop {
+      font-size: 5rem;
+    }
+  }
+
+  .home-account {
+    position: absolute;
+    bottom: 5rem;
+    width: 50%;
+    display: grid;
+    gap: 0.3rem;
+    margin: 0 auto;
+
+    button {
+      height: 2rem;
+    }
+
+    @include desktop {
+      bottom: 4rem;
+    }
+  }
 }
 
-/* 태블릿 스타일 */
-@media (min-width: $breakpoint-tablet) {
-  
+.svg-blurry {
+  width: 85%;
+  @include position-svg(auto, auto, -15%, 5%, -9);
+  @include tablet {
+    @include position-svg(auto, auto, -30%, 5%, -9);
+  }
 }
-
-/* 데스크탑 스타일 */
-@media (min-width: $breakpoint-desktop) {
-  
+.svg-claymoji {
+  width: 35%;
+  @include position-svg(-45%, 0, auto, auto, -9);
+}
+.svg-arrow {
+  width: 35%;
+  transform: scaleX(1) rotate(40deg);
+  @include position-svg(50%, auto, auto, 5%, -9);
 }
